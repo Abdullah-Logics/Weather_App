@@ -1,6 +1,6 @@
 # Get you API KEY From https://www.weatherapi.com/
 # Just Sign Up and Generate your secret API_Key
-
+# Copy it paste it in the line 8 String in the place of API Key
 import requests
 import json
 print("\nWelcome to Abdullah Bin Usman's Weather APP")
