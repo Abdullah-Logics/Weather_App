@@ -1,7 +1,11 @@
+# Get you API KEY From https://www.weatherapi.com/
+# Just Sign Up and Generate your secret API_Key
+
 import requests
 import json
 print("\nWelcome to Abdullah Bin Usman's Weather APP")
 while True:
+    api_key = "Your API Key"
     try:
         city = input("Enter the name of your City: ")
         if city.lower() == "exit":
@@ -10,7 +14,7 @@ while True:
             else:
                 print("Sweet dreams!")
             break
-        url = f"https://api.weatherapi.com/v1/current.json?key=3425846a7db74a008c981555240108&q={city}"
+        url = f"https://api.weatherapi.com/v1/current.json?key={api_key}={city}"
         r = requests.get(url)
         LocationDict = json.loads(r.text)
         print("\n----------------------------------------------")
